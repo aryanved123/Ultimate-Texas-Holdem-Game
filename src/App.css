@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0b3d0b;
+    color: white;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 10px;
+}
+
+.card-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #222;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6px;
+    color: black;
+    position: relative;
+}
+
+.card.red {
+    color: red;
+}
+
+.card .corner {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.card .top {
+    align-self: flex-start;
+}
+
+.card .bottom {
+    align-self: flex-end;
+    transform: rotate(180deg);
+}
+
+.card .suit {
+    font-size: 24px;
+    align-self: center;
+}
+
+.hidden-text {
+    font-style: italic;
+    color: lightgray;
+}
+
+.dealer, .center, .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stats {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.controls button, .after-hand button, .start-area button {
+    background-color: #1e7e34;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover:not(:disabled),
+.after-hand button:hover:not(:disabled),
+.start-area button:hover:not(:disabled) {
+    background-color: #28a745;
+}
+
+.controls button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #00ff99;
+}
+
+.after-hand {
+    margin-top: 10px;
+}
+
+.out-of-money {
+    color: #ff6666;
+}
+
+.start-area {
+    margin-top: 20px;
+}
